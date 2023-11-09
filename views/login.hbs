@@ -1,0 +1,29 @@
+<h1>Login</h1>
+
+<div class="row align-items-center justify-content-center">
+  <div class="col-md-6">
+    <form action="/auth/login" method="post">
+
+      {{!-- <input type="hidden" name="_csrf" value="{{csrfToken}}" /> --}}
+      <input
+        type="text"
+        name="email"
+        class="form-control mb-2"
+        placeholder="Ingrese su E-mail"
+        value="emailcuatro123@test.com"
+      />
+      <input
+        type="password"
+        name="password"
+        class="form-control mb-2"
+        placeholder="Ingrese su contraseña"
+        value="123456"
+      />
+
+      <div class="row justify-content-center">
+        <button class="btn btn-primary" type="submit">LogIn</button>
+
+      </div>
+    </form>
+  </div>
+</div>
